@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="/vite.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Vite App</title>
+	</head>
+	<body>
+		<div id="app">
+			<header class="app-header">
+				<h1>Tirage au sort</h1>
+				<nav class="menu-navigation"></nav>
+			</header>
+
+			<main class="content-wrapper">
+				<form action="handleform.php" method="post">
+					<label for="tirage"
+						>Mettez ici vos élements séparés par un point
+						virgule</label
+					>
+					<input id="tirage" type="text" name="tirage" />
+					<input type="submit" value="Tirer au sort" />
+				</form>
+
+				<div class="results"></div>
+
+				<!--
+                Jeu de test : Le parrain;Toy story3;Les bronzés;
+                Etape 1 : identifier les éléments à manipuler
+                Etape 2 : écouter les événements : change ou submit
+                Etape 3 : récupérer les données de l'input avec le name/id tirage
+                Etape 4 : découper les éléments de l'input a partir du ;
+                Etape 5 : tirer au sort un élément
+                Etape 6 : afficher le résultat
+                -->
+			</main>
+
+			<footer class="app-footer">
+				<p>&copy; 2024 Tirage au sort. All rights reserved.</p>
+			</footer>
+		</div>
+		<script type="module" src="/main.js"></script>
+	</body>
+</html>
