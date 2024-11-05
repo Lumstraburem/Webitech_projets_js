@@ -81,6 +81,25 @@ const contientAuMoinsUnCaractereSpecial = /[^a-zA-Z0-9]+/;
 const contientAuMoinsCinqChiffres = /\d{5,}/;
 ```
 
+Exemple de code REGEX :
+
+```js
+const isNumber = /\d/;
+const isLetter = /[a-zA-Z]/;
+
+const testIsNumber = isNumber.test('123');
+console.log(testIsNumber); // true
+
+const testIsLetter = isLetter.test('abc');
+console.log(testIsLetter); // true
+
+const falsyTestIsNumber = isNumber.test('abc');
+console.log(falsyTestIsNumber); // false
+
+const falsyTestIsLetter = isLetter.test('123');
+console.log(falsyTestIsLetter); // false
+```
+
 En combinant ces regex, on peut tester un mot de passe. Nous voulons que le mot de passe contienne au moins 8 caractères, au moins une lettre, au moins un chiffre et au moins un caractère spécial.
 
 En tant qu'utilisateur, je dois pouvoir copier un mot de passe dans une zone de texte et cliquer sur un bouton "Tester" pour voir si le mot de passe est valide ou non. Je dois recevoir un message d'erreur si le mot de passe n'est pas valide.
@@ -180,3 +199,7 @@ En tant qu'utilisateur, je dois voir un message de fin de jeu avec mon score.
 En tant qu'utilisateur, le cube peut disparaitre si je ne clique pas dessus assez rapidement.
 
 En tant qu'utilisateur, je ne dois pas cliquer sur le triangle qui peut apparaitre à la place du cube.
+
+```
+
+```
