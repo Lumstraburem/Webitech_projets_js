@@ -17,9 +17,11 @@ const results = document.querySelector('.results');
 
 // const input = document.getElementById("tirage");
 
-form.addEventListener('submit', function (event) {
-	handleSubmit(event);
-});
+if (form) {
+	form.addEventListener('submit', function (event) {
+		handleSubmit(event);
+	});
+}
 
 function handleSubmit(event) {
 	event.preventDefault();

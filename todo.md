@@ -1,16 +1,16 @@
 # Liste de projets JS
 
-## Quizz de personnalité
-
-## Générateur de noms indiens
+## Compteur de mots, caractères
 
 ## Tirage au sort a partir d'une liste a separateur
 
-## Todo list
-
-## Compteur de mots, caractères, phrases
+## Générateur de noms indiens
 
 ## Testeur de mot de passe
+
+## Quizz de personnalité
+
+## Todo list
 
 ## Audio player with visualizer
 
